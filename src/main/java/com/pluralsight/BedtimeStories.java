@@ -27,10 +27,12 @@ public class BedtimeStories {
                 System.out.println(count + ". " + line);
                 count++;
             }
+            bufferedReader.close();
         } catch (Exception e) {
             // Displays error
             System.out.println(e.getMessage());
         }
+        scanner.close();
 
     }
 }
